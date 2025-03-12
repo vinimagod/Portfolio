@@ -14,3 +14,7 @@ toggleSwitch.addEventListener("change", () => {
         htmlElement.classList.remove("dark-theme");
     }
 });
+
+const copyrightYear = document.getElementById("ano");
+const actualYear = new Date();
+copyrightYear.innerHTML = actualYear.getFullYear();

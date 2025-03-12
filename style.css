@@ -38,6 +38,28 @@ html,body{
     padding: 0;
 }
 
+
+h1{
+    font-family: 'Sansation', 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 4rem;
+    margin: 2rem 0;
+}
+
+h2{
+    font-family: 'Sansation', 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+h3{
+    font-family: 'Sansation', 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 2rem 0; 
+}
+
 section:first-of-type{
     padding-top: 15vh;
 }
@@ -47,6 +69,11 @@ section {
     display: flex;
     flex-direction: row;
     height: 115vh;
+
+    p{
+        text-align: justify;
+        font-size: 2rem;
+    }
 }
 
 .project__section{
@@ -63,28 +90,6 @@ section {
     flex-direction: column;
     align-items: center;
     height: 115vh;
-}
-
-h1{
-    font-family: 'Sansation', 'Courier New', Courier, monospace;
-    font-weight: normal;
-    font-size: 4rem;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    margin: 2rem 0;
-}
-
-h2{
-    font-family: 'Sansation', 'Courier New', Courier, monospace;
-    font-weight: normal;
-    font-size: 3rem;
-    text-align: center;
-    margin: 2rem 0;
-}
-
-p{
-    text-align: justify;
-    font-size: 2rem;
 }
 
 /** HEADER START */
@@ -278,10 +283,18 @@ header > .header__title, .header__title > h1 {
     width: 100%;
 }
 
-.about-content__container > p{
-    padding: 0 2.5vw;
-}
 
+/** ABOUT*/
+.about-content__container{
+
+    p{
+    padding: 0 2.5vw;
+    }
+    
+    h1{
+        text-align: center;
+    }
+}
 
 .projects-cards__container{
     display: flex;
@@ -338,36 +351,31 @@ header > .header__title, .header__title > h1 {
 }
 
 
-
-.contact__container{
-    display: flex;
-    flex-direction: row;
-}
-
-.socials__container{
+/** FOOTER */
+footer{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+    background-color:var(--header-background) ;
+
+    h3{
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    a{
+        font-size: 1rem;
+        font-weight: normal;
+        text-shadow: none;
+    }
 }
 
-.socials-icons__container{
+.contacts{
+    width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-
-.gg-labs-colaborators__container{
-    background-color: #ECAA00;
-    width: 100%;
-}
-
-.colaborators__images{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 2%;
-}
-
-.colaborators__images > a > img{
-    width: 15rem;
-    border-radius: 100%;
+    justify-content: center;
+    gap: 1rem;
 }
