@@ -1,0 +1,37 @@
+ion-header a {
+  color: var(--ion-color-primary-contrast);
+  text-decoration: none;
+}
+
+.header-buttons .nav-buttons ion-button:hover,
+.logo a:hover {
+  color: var(--ion-color-tertiary);
+  transition: ease 250ms;
+}
+
+ion-button.active {
+  color: var(--ion-color-tertiary);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.github-button:hover {
+  color: #7e7e7e;
+  transition: ease 250ms;
+}
+
+.linkedin-button:hover {
+  color: #0077b5;
+  transition: ease 250ms;
+}
+
+.instagram-button:hover {
+  color: #e1306c;
+  transition: ease 250ms;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

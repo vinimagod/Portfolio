@@ -1,11 +1,70 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Portfolio Header</ion-title>
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon name="call-outline" slot="start" class="icone"></ion-icon>
-        contatct
-      </ion-button>
+  <ion-toolbar color="primary">
+    <ion-buttons class="header-buttons">
+      <!--* ===== LOGO ===== *-->
+      <div class="logo">
+        <a routerLink="/home">
+          <ion-title> VMGO </ion-title>
+        </a>
+      </div>
+      <!--* ===== LOGO ===== *-->
+
+      <!--* ===== NAVIGATION BUTTONS ===== *-->
+      <div class="nav-buttons">
+        <ion-button
+          routerLink="/home"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          início
+        </ion-button>
+        <ion-button
+          routerLink="/experiences"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Experiências
+        </ion-button>
+        <ion-button
+          routerLink="/projects"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Projetos
+        </ion-button>
+        <ion-button
+          routerLink="/education"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          Educação
+        </ion-button>
+        <ion-button> contato </ion-button>
+      </div>
+      <!--* ===== NAVIGATION BUTTONS ===== *-->
+
+      <!--* ===== SOCIAL BUTTONS ===== *-->
+      <div>
+        <ion-button class="github-button">
+          <a href="https://github.com/vinimagod" target="_blank">
+            <ion-icon name="logo-github" slot="icon-only"></ion-icon>
+          </a>
+        </ion-button>
+        <ion-button class="linkedin-button">
+          <a
+            href="https://www.linkedin.com/in/vinicius-m-godinho-b4155623a/"
+            target="_blank"
+          >
+            <ion-icon name="logo-linkedin" slot="icon-only"></ion-icon>
+          </a>
+        </ion-button>
+        <ion-button class="instagram-button">
+          <a href="https://www.instagram.com/vinimagod/" target="_blank">
+            <ion-icon name="logo-instagram" slot="icon-only"></ion-icon>
+          </a>
+        </ion-button>
+      </div>
+      <!--* ===== SOCIAL BUTTONS ===== *-->
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
