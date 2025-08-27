@@ -5,7 +5,7 @@ import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
 
 import { addIcons } from 'ionicons';
-import { logoInstagram, logoLinkedin, logoGithub, logoGoogle } from 'ionicons/icons'
+import { logoInstagram, logoLinkedin, logoGithub } from 'ionicons/icons'
 
 addIcons({ 'logo-instagram': logoInstagram, 'logo-linkedin': logoLinkedin, 'logo-github': logoGithub,});
 

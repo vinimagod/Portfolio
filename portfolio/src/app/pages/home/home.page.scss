@@ -1,4 +1,15 @@
 //* ===== GERAL ===== *//
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 h1 span {
   color: var(--ion-color-secondary);
   font-weight: bold;
@@ -22,12 +33,15 @@ p{
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-
-  h1{
-    margin-bottom: 10rem;
-  }
 }
 
+.intro{
+  max-width: 60%;
+  p{
+    font-size: 1.2rem;
+  }
+
+}
 
 .intro-img-container {
   display: flex;
@@ -42,6 +56,38 @@ p{
     transform: rotate(10deg);
   }
 }
-
-
 //* ===== INTRODUÇÃO ===== *//
+
+//* ===== TECNOLOGIAS ===== *//
+.tech-section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.tech-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+
+  ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+  }
+
+}
+
+//* ===== TECNOLOGIAS ===== *//
+
+//* ===== PROJETOS ===== *//
+
+
+//* ===== PROJETOS ===== *//

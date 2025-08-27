@@ -35,6 +35,13 @@
   --ion-color-tertiary-contrast-rgb: 0, 0, 0;
   --ion-color-tertiary-shade: #008fc8;
   --ion-color-tertiary-tint: #1aace6;
+
+  --ion-purple: #470050;
+	--ion-purple-rgb: 71,0,80;
+	--ion-purple-contrast: #ffffff;
+	--ion-purple-contrast-rgb: 255,255,255;
+	--ion-purple-shade: #3e0046;
+	--ion-purple-tint: #591a62;
 }
 
 h1 {
@@ -42,14 +49,35 @@ h1 {
   font-size: 3rem;
 }
 
+h2{
+  margin-top: 5rem;
+  color: var(--ion-color-primary-contrast);
+  font-size: 2rem;
+}
+
+h3{
+  color: var(--ion-color-primary-contrast);
+  font-size: 1.5rem;
+}
+
+
 p {
   color: var(--ion-color-primary-contrast);
   font-size: 1rem;
 }
 
+ul{
+  color: var(--ion-color-primary-contrast);
+}
+
+li{
+  
+}
+
 ion-content {
-  --padding-start: 1rem;
+  --padding-start: 2.5rem;
   --pading-end: 1rem;
   --padding-bottom: 1rem;
   --background: #023245;
+  --background: linear-gradient(90deg,rgba(0, 17, 28, 1) 55%, rgba(2, 50, 69, 1) 95%);
 }

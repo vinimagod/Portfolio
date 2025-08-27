@@ -1,13 +1,20 @@
 <ion-content (ionScroll)="onScroll($event)" scrollEvents="true">
   <!--* ===== INTRODUÇÃO ===== *-->
-  <section class="intro-section">
+  <section #fadeEl class="intro-section">
     <!--? ===== INICIO ===== ?-->
     <div class="intro-container">
-      <h1>
-        Olá,<br />
-        Sou o <span>Vinicius Madureira</span>,<br />Desenvolvedor web
-      </h1>
-      
+      <div class="intro">
+        <h1>
+          Olá,<br />
+          Sou o <span>Vinicius Madureira</span>,<br />Desenvolvedor web
+        </h1>
+        <p>
+          Estudante de Ciência da Computação, Gosto de transformar ideias em
+          interfaces funcionais, acessíveis com um design bonito e moderno. Este
+          portfólio é um espaço onde meus projetos, experiências e aprendizados
+          podem ser vizualizados por todos. Fique à vontade para explorar
+        </p>
+      </div>
 
       <div class="intro-img-container">
         <img
@@ -18,53 +25,152 @@
       </div>
     </div>
     <!--? ===== INICIO ===== ?-->
-
-    <!--? ===== SOBRE MIM ===== ?-->
-    <div class="about-section">
-      <p>
-        Estudante de Ciência da Computação e desenvolvedor em constante
-        evolução. Gosto de transformar ideias em interfaces funcionais,
-        acessíveis e com um toque de criatividade. Atualmente, estou explorando
-        o mundo do front-end (com uma quedinha por Angular e Ionic), mas também
-        adoro aprender sobre novas tecnologias e colocar a mão no código sempre
-        que posso. Este portfólio é um espaço onde compartilho alguns dos meus
-        projetos, experiências e aprendizados ao longo da jornada. Fique à
-        vontade para explorar
-      </p>
-    </div>
-    <!--? ===== SOBRE MIM ===== ?-->
   </section>
   <!--* ===== INTRODUÇÃO ===== *-->
 
   <!--* ===== TECNOLOGIAS ===== *-->
-  <section class="tecnologias">
+  <section #fadeEl class="tech-section">
     <h2>Tecnologias</h2>
-    <div class="tecnologias-container">
-      <div class="tecnologia">
-        <ion-icon> name="logo-html" class="html-logo"></ion-icon>
-        <p>HTML5</p>
-      </div>
-      <div class="tecnologia">
-        <img src="../../../assets/icons/css3.svg" alt="logo do css3" />
-        <p>CSS3</p>
-      </div>
-    </div>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel
-      autem laborum asperiores vero tenetur explicabo consequatur blanditiis id
-      aliquam! Ipsa minus fugiat laborum a explicabo animi corrupti ducimus
-      delectus! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-      Accusamus sit consequuntur tempore? Labore facilis quas sit facere harum,
-      veniam sed omnis fuga maxime dolorum! Fuga veritatis pariatur consectetur
-      deleniti porro. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Recusandae sit unde velit et debitis! Voluptates, tempore voluptas commodi
-      ex deleniti recusandae, dolor consectetur rerum quam nulla fuga
-      praesentium minus possimus. Lorem ipsum dolor sit amet consectetur,
-      adipisicing elit. Blanditiis ut quidem, eum doloribus ipsam atque nulla
-      optio vero ipsa iste perferendis, accusantium numquam corrupti expedita
-      provident. Perferendis quidem repudiandae iste.
-    </p>
+    <ul class="tech-list">
+      <!--? ===== WEB ===== ?-->
+      <li>
+        Desenvolvimento Web
+        <ul>
+          <!--? ~~~~~ HTML ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+            />
+          </li>
+          <!--? ~~~~~ HTML ~~~~~ ?-->
+
+          <!--? ~~~~~ CSS ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&amp;logo=css&amp;logoColor=white"
+            />
+          </li>
+          <!--? ~~~~~ CSS ~~~~~ ?-->
+
+          <!--? ~~~~~ JS ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
+            />
+          </li>
+          <!--? ~~~~~ JS ~~~~~ ?-->
+
+          <!--? ~~~~~ TS ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/typescript-%231572B6.svg?style=for-the-badge&amp;logo=typescript&logoColor=white"
+            />
+          </li>
+          <!--? ~~~~~ TS ~~~~~ ?-->
+        </ul>
+      </li>
+      <!--? ===== WEB ===== ?-->
+
+      <!--? ===== FRAMEWORKS ===== ?-->
+      <li>
+        Frameworks
+        <ul>
+          <!--? ~~~~~ ANGULAR ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&amp;logo=angular&amp;logoColor=white"
+            />
+          </li>
+          <!--? ~~~~~ ANGULAR ~~~~~ ?-->
+
+          <!--? ~~~~~ IONIC ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/ionic-%2300DCFF.svg?style=for-the-badge&amp;logo=ionic&amp;logoColor=black"
+            />
+          </li>
+          <!--? ~~~~~ IONIC ~~~~~ ?-->
+        </ul>
+      </li>
+      <!--? ===== FRAMEWORKS ===== ?-->
+
+      <!--? ===== BANCO DE DADOS ===== ?-->
+      <li>
+        Banco de Dados
+        <ul>
+          <!--? ~~~~~ SUPABASE ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/supabase-%2334B27B.svg?style=for-the-badge&amp;logo=supabase&amp;logoColor=white"
+            />
+          </li>
+          <!--? ~~~~~ SUPABASE ~~~~~ ?-->
+        </ul>
+      </li>
+      <!--? ===== BANCO DE DADOS ===== ?-->
+
+      <!--? ===== IDEs ===== ?-->
+      <li>
+        IDEs
+        <ul>
+          <!--? ~~~~~ VSCODE ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/visual_studio_code-%23007ACC.svg?style=for-the-badge&amp;logo=visual-studio-code&amp;logoColor=white"
+            />
+          </li>
+          <!--? ~~~~~ VSCODE ~~~~~ ?-->
+        </ul>
+      </li>
+      <!--? ===== IDEs ===== ?-->
+
+      <!--? ===== VERCIONAMENTO ===== ?-->
+      <li>
+        Versionamento
+        <ul>
+          <!--? ~~~~~ GIT ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/git-%23F05032.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
+            />
+          </li>
+          <!--? ~~~~~ GIT ~~~~~ ?-->
+
+          <!--? ~~~~~ GITHUB ~~~~~ ?-->
+          <li>
+            <img
+              src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+            />
+          </li>
+          <!--? ~~~~~ GITHUB ~~~~~ ?-->
+        </ul>
+      </li>
+      <!--? ===== VERCIONAMENTO ===== ?-->
+    </ul>
   </section>
   <!--* ===== TECNOLOGIAS ===== *-->
+
+  <!--* ===== PROJETOS ===== *-->
+  <section #fadeEl class="project-section">
+    <h2>Projetos</h2>
+    <ion-grid>
+      <ion-row>
+        @for (project of projects; track $index) {
+        <ion-col size="12" size-md="6" size-lg="4">
+          <app-project-card
+            [image]="project.image"
+            [title]="project.title"
+            [description]="project.description"
+            [technologies]="project.technologies"
+            [repoLink]="project.repoLink"
+          >
+          </app-project-card>
+        </ion-col>
+        }
+      </ion-row>
+    </ion-grid>
+  </section>
+  <!--* ===== PROJETOS ===== *-->
+
   <app-footer></app-footer>
 </ion-content>
